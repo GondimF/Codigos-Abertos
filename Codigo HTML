@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <form id="formulario_centralizar">
+        <h1>Cadastro de Produtos</h1>
+        <label for="input-nome_produto">Nome do Produto: </label>
+        <input type="text" name="input-nome_produto" id="input-nome_produto" placeholder="Digite o nome do Produto">
+        <br>
+        <br>
+
+
+        <label for="input-quantidade">Quantidade: </label>
+        <input type="number" name="input-quantidade" id="input-quantidade" min="0">
+        <br>
+        <br>
+
+
+        <label for="input-categoria">Categoria: </label>
+        <select id="input-categoria">
+            <option>Eletrônicos</option>
+            <option>Roupas</option>
+            <option>Veículos</option>
+        </select>
+        <br>
+        <br>
+
+
+        <label>Disponibilidade: </label>
+        <input type="radio" name="Disponibilidade" id="em_estoque"><label for="em_estoque">Em estoque</label>
+        <input type="radio" name="Disponibilidade" id="esgotado"><label for="esgotado">Esgotado</label>
+        <br>
+        <br>
+
+
+        <label for="descricao">Descrição: </label>
+        <textarea name="descricao" id="descricao" placeholder="Digite a descrição do produto"></textarea>
+        <br>
+        <br>
+
+        
+        <button type="submit">Cadastrar produto</button>
+    </form>
+    <br>
+
+    <h2>Produtos Cadastrados</h2>
+    <table border="1" class="tabela">
+        <thead class="cabecalho">
+            <tr>
+                <th>Nome do Produto</th>
+                <th>Quantidade</th>
+                <th>Categoria</th>
+                <th>Disponibilidade</th>
+                <th>Descrição</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Ferrari SF90</td>
+                <td><strong>3</strong></td>
+                <td>Veículos</td>
+                <td class="estoque">Em estoque</td>
+                <td>Carro esportivo de luxo vermelho</td>
+            </tr>
+            
+            <tr>
+                <td>Lingerie</td>
+                <td><strong>15</strong></td>
+                <td>Roupas</td>
+                <td class="sestoque">Esgotado</td>
+                <td>Fone de ouvido sem fio com cancelamento de ruído</td>
+            </tr>
+
+            <tr>
+                <td>Computador Vivobook 15</td>
+                <td><strong>10</strong></td>
+                <td>Tecnologia</td>
+                <td class="estoque">Em estoque</td>
+                <td>Notebook ultra rapido com componentes de última geração</td>
+            </tr>
+
+            <tr>
+                <td>Calça cargo</td>
+                <td><strong>01</strong></td>
+                <td>Roupas</td>
+                <td class="sestoque">Esgotado</td>
+                <td>Calça modelo cargo de cor preta tamanho GG</td>
+            </tr>
+
+           
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="5">Total de Produtos Cadastrados: <strong>4</strong></td>
+            </tr>
+        </tfoot>
+        
+    </table>
+
+</body>
+
+</html>
