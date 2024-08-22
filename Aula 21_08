@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <form>
+        <label for="input-nome">Nome: </label>
+        <input type="text" id="input-nome" placeholder="Informe seu nome...">
+    <br>
+    <br>
+        <label for="input-idade">Idade: </label>
+        <input type="number" id="input-idade" placeholder="Informe sua idade...">
+    <br>
+    <br>
+        <button id="btn-enviar">Enviar</button>
+    </form>
+
+    <p id="nome"></p>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+document.getElementById('btn-enviar')
+.addEventListener('click', function(e) {
+  e.preventDefault(); // Impede a pag de recarregar ao enviar o formulário
+
+  let nome = document.getElementById('input-nome').value;
+  let idade = document.getElementById('input-idade').value;
+
+  document.getElementById('nome','idade').innerText = `O nome digitado foi: ${nome}, que nasceu em ${2024 -  idade}`;
+  
+})
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
