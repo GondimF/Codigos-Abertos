@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <img src="https://mercadoeconsumo.com.br/wp-content/uploads/2019/12/bigstock-Omni-Channel-Technology-Of-Onl-336037885.jpg">
+        <h1>Detalhes do Evento</h1>
+        <p>"Participe do nosso evento com o grande Pablo Marçal, sobre desenvolvimento web e aprenda as melhores práticas de design e codificação com especialistas da área."</p>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Inscreva-se</a>
+        <p class="inscricao">Cancelar inscrição</p>
+    </div>
+</body>
+</html>
+
+
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root {
+    --azul-claro: #e0e8ff;
+    --azul-vibrante: #7c89f4;
+    --azul-suave: #f8faff;
+    --azul-acinzentado: #8f98b0;
+    --azul-profundo: #1f2f61;
+    --roxo-escuro: #0e0020;
+}
+
+body {
+    background-image: linear-gradient(to top, #030c32, #00134b, #001663, #07167c, #231294);
+    height: 100vh;
+}
+
+.container {
+    border-radius: 11px;
+    width: 400px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+img {
+    max-width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+h1, p {
+    text-align: center;
+    color: var(--azul-profundo);
+}
+
+p {
+    padding-left: 50px;
+    padding-right: 50px
+}
+
+a {
+    text-decoration: none;
+    background-color: black;
+    color: whitesmoke;
+    display: block;
+    text-align: center;
+    margin: 0px 40px;
+    padding: 12px;
+    border-radius: 10px;
+    background-color: var(--azul-profundo);
+}
+
+.inscricao {
+    padding-bottom: 20px;
+    padding-top: 0;
+    color: var(--azul-acinzentado);
+}
+
+p {
+    padding-bottom: 10px;
+}
+
+a:hover {
+    transition: 50ms;
+    background-color: #6674f8;
+    color: var(--azul-profundo);
+}
